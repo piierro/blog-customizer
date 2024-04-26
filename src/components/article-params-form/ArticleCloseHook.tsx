@@ -14,17 +14,3 @@ export const useOutsideClick = (ref: React.RefObject<HTMLElement>, callback: () 
       };
     }, [ref, callback]);
   };
-
-  // const handleClickOutside = (event: MouseEvent) => {
-	// 	if (ref.current && !ref.current.contains(event.target as Node)) {
-	// 	  setIsSidebarOpen(false);
-	// 	}
-	// };
-    
-	// // Добавляем обработчик клика вне сайдбара при монтировании компонента
-	// useEffect(() => {
-	// 	document.addEventListener('mousedown', handleClickOutside);
-	// 	return () => {
-	// 	  document.removeEventListener('mousedown', handleClickOutside);
-	// 	};
-	// }, []);
